@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.product-container {
+    padding: 30px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* ---------- Form Section ---------- */
+.form-section {
+    background: #fff7f0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.product-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 180px;
+    font-size: 15px;
+}
+
+.add-btn {
+    background: purple;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.add-btn:hover {
+    background: #6a0dad;
+}
+
+/* ---------- Table Section ---------- */
+.table-section {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background: #222;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.edit-btn {
+    background: #ffbf00;
+    color: #000;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ---------- Logout ---------- */
+.logout-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.logout-btn {
+    border: 1px solid #ff4d4f;
+    background: transparent;
+    color: #ff4d4f;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #ff4d4f;
+    color: #fff;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .product-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-form input {
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}

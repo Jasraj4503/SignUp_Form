@@ -1,0 +1,124 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playpen+Sans:wght@500&family=Poppins:wght@400;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sixtyfour&display=swap'); */
+
+/* body {
+    font-family: "Poppins", sans-serif;
+} */
+
+/* body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+.auth-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #000 30%, #020b2a 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.auth-page::before,
+.auth-page::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(0, 153, 255, 0.1) 0,
+    rgba(0, 153, 255, 0.1) 2px,
+    transparent 2px,
+    transparent 60px
+  );
+  animation: moveLights 10s linear infinite;
+}
+
+@keyframes moveLights {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+
+.auth-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 153, 255, 0.4);
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  padding: 40px 35px;
+  width: 350px;
+  color: white;
+  box-shadow: 0 0 25px rgba(0, 153, 255, 0.4);
+  z-index: 2;
+}
+
+.auth-box h2 {
+  text-align: center;
+  font-weight: 600;
+  color: #00aaff;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 153, 255, 0.5);
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 10px #00aaff;
+  border-color: #00aaff;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #00aaff;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background: #0088dd;
+  box-shadow: 0 0 15px #00aaff;
+}
+
+.switch-text {
+  text-align: center;
+  color: #ccc;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch-text span {
+  color: #00aaff;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
